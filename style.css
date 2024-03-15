@@ -1,0 +1,749 @@
+body {
+    margin: 0px;
+}
+div#topbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+div#topbar ul li a {
+    background-color: color(srgb 1 0.82 0);
+    padding: 5px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+div#topbar ul li a.current-lg {
+    background-color: color(srgb 0 0.81 0.66) !important;
+    color: color(srgb 0.3 0.33 0.57) !important;
+}
+div#topbar ul li a:hover {
+    background-color: color(srgb 0 0.81 0.66) !important;
+    color: color(srgb 0.3 0.33 0.57) !important;
+}
+div#header-main nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+div#header-main nav ul a {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+div#header-main nav {
+    display: flex;
+    justify-content: end;
+}
+div#header-main nav ul li{
+    margin-left: 20px;
+}
+div#header-main nav ul a:hover {
+    color: color(srgb 1 0.43 0.33) !important;
+}
+
+.hero-section {
+    background-image: url('images/bg-img-01.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100% !important;
+}
+
+.hero-content {
+    max-width: 850px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    font-size: 14px;
+    border: none;
+    line-height: normal;
+    background-color: hsl(168.64deg 99.04% 40.78%);
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.title-exp {
+    background: #fbce01;
+    width: 60%;
+}
+.title-exp h2 {
+    color: #656378;
+    font-family: 'Roboto';
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.link-a-propos a {
+    color: #656378;
+    font-family: 'Roboto';
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+.link-a-propos {
+    background: #ffad01;
+    width: 40%;
+}
+div#experience {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 35px;
+    width: 100%;
+}
+
+.top-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.top-menu ul li a{
+    padding: 0px 20px;
+}
+.top-menu a {
+    color: #656378;
+    font-weight: 500;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    padding: 8px 25px;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+span a{
+    border: 1px solid #554b90;
+    border-radius: 25px;
+    color: #554b90;
+    font-weight: 500;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    padding: 8px 25px;
+}
+
+.divider {
+    position: relative;
+    width: 100%;
+}
+
+.hero-divider-one,
+.hero-divider-two {
+    position: absolute;
+    bottom: 0;
+    height: 0.5px;
+    background-color: #656378;
+}
+
+.hero-divider-one::after {  
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: calc(101% - 1.25px);
+    width: 1px;
+    height: 12px;
+    background-color: #656378;
+    transform: rotate(-45deg); 
+}
+
+.hero-divider-two::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: calc(-1% + 7.25px);
+    width: 1px;
+    height: 12px;
+    background-color: #656378;
+    transform: rotate(45deg); 
+}
+
+.hero-divider-one {
+    left: 0;
+    width: 29%;
+}
+
+.hero-divider-two {
+    left: 30%;
+    width: 70%;
+}
+
+
+
+
+
+.blog-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    flex-direction: column;
+}
+.blog-section-content {
+    max-width: 1024px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img.img_blog {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 10px;
+}
+.blog {
+    width: 25%; 
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.author-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 13%;
+    top: 57%;
+}
+.author-circle img {
+    display: block;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+.author-circle::before {
+    display: block;
+}
+.prix {
+    position: absolute;
+    left: 33%;
+    top: 56%;
+}
+.prix span {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Roboto';
+    line-height: normal;
+}
+.blog h2 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.blog h3 {
+    color: #02d5b2;
+    font-size: 13px;
+    margin-top: 0px;
+    text-align: center;
+}
+.blog p {
+    color: #a2a2a2;
+    font-size: 13px;
+    text-align: center;
+    line-height: normal;
+    margin: 4px;
+}
+span.blog-section-btn {
+    margin-top: 20px;
+}
+
+section.voyage-de-reve .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+section.voyage-de-reve .left-block,
+
+section.voyage-de-reve .right-block {
+    width: 50%;
+    height: 80vh;
+  }
+  
+section.voyage-de-reve .row {
+    display: flex;
+  }
+section.voyage-de-reve .left-block .row{
+    height: 50%;
+}  
+section.voyage-de-reve .right-block .row{
+    height: 100%;
+}  
+section.voyage-de-reve .column {
+    flex: 1;
+    padding: 5px;
+  }
+  
+section.voyage-de-reve img {
+    width: 100%;
+    height: 100%;
+}
+section.voyage-de-reve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    flex-direction: column;
+    margin-bottom: 6%;
+}
+section.voyage-de-reve .container {
+    max-width: 1024px;
+    padding: 10px;
+    
+}
+section.voyage-de-reve .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.voyage-de-reve span.section-title h2 {
+    color: #554b90;
+    font-weight: 500;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+section.voyage-de-reve .left-block .column {
+    flex: 1;
+    padding: 5px;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+section.voyage-de-reve .btn-bloc.color-1{
+    background: #ff6243;
+    height: 15%;
+}
+section.voyage-de-reve .btn-bloc.color-2{
+    background: #01cfa8;
+    height: 15%;
+}
+section.voyage-de-reve .btn-bloc a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+section.voyage-de-reve .btn-bloc a p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+section.voyage-de-reve .right-block .column{
+    position: relative;
+    background-image: url(images/blog-4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 77.5vh;
+    margin-top: 5px;
+}
+section.voyage-de-reve .right-block .column .gradient-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #007861, #00537a); 
+    opacity: 0.5; 
+  }
+  section.voyage-de-reve  .infos {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+section.voyage-de-reve  .infos h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+section.voyage-de-reve .infos strong {
+    font-size: 28px;
+    line-height: 35px;
+}
+section.voyage-de-reve .right-block .infos h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+section.voyage-de-reve .right-block .infos strong {
+    font-size: 62px;
+    line-height: 70px;
+}
+section.voyage-de-reve .left-block-section .infos {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    padding: 0px;
+}
+section.voyage-de-reve span.btn-pub a{
+    padding: 12px 30px;
+    font-size: 13px;
+    border: none;
+    line-height: normal;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background: #fbce01;
+    font-family: 'Roboto';
+}
+.gradient-overlay-grey {
+    position: absolute;
+    background: linear-gradient(to right, #e4efeb, #ffffff);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.bloc-text {
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    width: 100%;
+    text-align: justify;
+}
+.bloc-text span {
+    color: #3f3f3f;
+    font-size: 48px;
+    font-family: 'Roboto';
+    line-height: 60px;
+    text-align: left;
+    font-weight: lighter !important;
+}
+.bloc-text span em{
+    color: #01cfa8;
+    font-style: normal;
+    font-weight: 400;
+}
+section.voyage-de-reve .left-block-section{
+    width: 45%;
+    position: relative;
+    background: #554b90;
+    height: 30vh;
+    margin-top: 5px;
+}
+section.voyage-de-reve .right-block-section{
+    width: 55%;
+    position: relative;
+    background-image: url(images/blog-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-top: 5px;
+}
+.gradient-overlay-blue {
+    background-image: linear-gradient(to right, #554f7b, #554b90);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+section.voyage-de-reve .right-block-section .infos p {
+    font-size: 14px;
+    font-family: auto;
+    line-height: 20px;
+    text-align: justify;
+    color: #fff;
+    padding: 15px;
+    font-family: 'Roboto';
+}
+section.voyage-de-reve .right-block-section .infos {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 100%;
+}
+section.partage .block .block-right-text{
+    height: 70vh;
+    width: 50%;
+}
+section.partage.one .block .block-left-img {
+    background: url(images/img-left_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50%;
+}
+section.partage .block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+section.partage .block .block-right-text .bloc-1,section.partage .block .block-right-text .bloc-2,
+section.partage .block .block-left-text .bloc-3, section.partage .block .block-left-text .bloc-4 {
+    padding: 0px 50px;
+}
+section.partage.one .block .block-right-text .content {
+    padding: 40px;
+}
+section.partage.two .block .block-left-text .content {
+    padding: 40px;
+}
+section.partage.two .block .block-left-text{
+    height: 70vh;
+    width: 50%;
+}
+.bloc-1 h2 {
+    color: #554b90;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+.bloc-2 h2 {
+    color: #fe6344;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+.bloc-3 h2 {
+    color: #01cfa8;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'Roboto';    
+    text-transform: uppercase;
+}
+.bloc-4 h2 {
+    color: #fcd702;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+.Heading {
+    display: flex;
+    align-items: center;
+}
+.bloc-4 .Heading span {
+    background: #fcd702;
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: 35px;
+}
+.bloc-3 .Heading span {
+    background: #01cfa8;
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: 35px;
+}
+.bloc-2 .Heading span {
+    background: #fe6344;
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: 35px;
+}
+.bloc-1 .Heading span {
+    background: #554b90;
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: 35px;
+}
+section.partage.two .block .block-right-img {
+    background: url(images/img-right_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50%;
+}
+section.partage.one .block .block-right-text .content p,
+section.partage.two .block .block-left-text .content p {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+section.Inscrivez-vous {
+    background: #fcd702;
+    padding: 5px;
+}
+section.Inscrivez-vous div#bloc {
+    display: flex;
+    align-items: center;
+}
+section.Inscrivez-vous div#bloc .title-exp {
+    background: none;
+}
+section.Inscrivez-vous div#bloc .title-exp h2 {
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    line-height: normal;
+    text-transform: none;
+    font-weight: 300;
+}
+section.Inscrivez-vous div#bloc .title-exp h2 span {
+    color: #01cfa8;
+}
+input#email {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    background: #fff;
+}
+button {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #fff;
+    background: #01cfa8;
+    border: none;
+    padding: 10px;
+    line-height: 20px;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.form-newsletter {
+    width: 25%;
+}
+
+footer {
+    background-color: #554b90;
+    padding:0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding:20px;
+}
+footer .row {
+    background: #474083;
+}
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 24px;
+}
+.footer-column ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+} 
+.footer-column ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 24px;
+    text-decoration: none;
+}
+.footer-column p {
+    
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.row .footer-columns p {
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
